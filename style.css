@@ -1,0 +1,133 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    padding-bottom: 70px; /* Added padding to prevent overlap with fixed footer */
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0; /* Add this to make sure it spans the full width */
+}
+
+/* Basic responsive design for smaller screens */
+@media (max-width: 768px) {
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header, section, footer {
+        padding: 10px;
+    }
+
+    body {
+        padding: 10px;
+    }
+
+    footer {
+        position: relative; /* Change footer position on smaller screens if needed */
+    }
+}
+
+/* Style for header when scrolled */
+header.scrolled {
+   background-color: #222; /* Darker background on scroll */
+   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+   transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Project specific styles */
+.project {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.project h3 {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.project p {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+.project a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* Contact section specific styles */
+#contact p {
+    margin-bottom: 0.5rem;
+}
+
+#contact a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
